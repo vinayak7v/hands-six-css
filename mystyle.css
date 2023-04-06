@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-image: url(shara\ desert\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    padding-left: 8%;
+    padding-right: 8%; 
+    display: flex;
+    flex-wrap: wrap;     
+    display: inline-block; 
+    /* box-sizing: border-box; */
+}
+.navbar{
+    display: flex;
+    height: 12%; 
+    align-items: center;
+    margin-top: 40px;
+}
+.image{
+    margin-top: 10px; 
+    width: 70px;  
+    cursor: pointer;
+ 
+}
+.menu-icon{
+     width: 30px; 
+     cursor: pointer;
+     margin-left: 40px; 
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block; 
+    margin-left: 60px; 
+    color: white;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    flex: 1; 
+    margin-top: 30px;  
+    align-items: center;
+    gap: 100px;
+}
+.left{
+
+}
+.right{
+    
+}
+
+
+h1{
+    color: white;
+    font-size: 80px;
+}
+.left p{
+    color: white;
+    font-size: 20px;
+    line-height: 15px;
+}
+.button{
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+ .one{
+    width: 210px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+     margin: 10px 15px; 
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.5s;
+    justify-content: right;
+ }
+ .one1{
+    background-image: url(./pic-1\ \(1\).png);
+ }
+ .one2{
+    background-image: url(./pic-2\ \(1\).png);
+ }
+ .one3{
+    background-image: url(./pic-3\ \(1\).png);
+ }
+ .one4{
+    background-image: url(./pic-4\ \(1\).png);
+ }
+ .one:hover{
+    transform: translateY(-5px);
+ }
+h3{
+    color: white;
+
+}
+.one p{
+    color: white;
+    font-size: 8px;
+
+}
+@media screen and (max-width: 600px){
+    nav{
+      /* justify-content: center; */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+     
+    } 
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
